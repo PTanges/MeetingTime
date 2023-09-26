@@ -2,7 +2,9 @@
 Algorithm Project
 > Instructions below are provided via Professor Dsouza
 > Date: Fall 2023
+
 Project Member(s): **Patton Tang**
+
 University Email: pattontanges@csu.fullerton.edu
 
 ## Running Instructions
@@ -32,8 +34,8 @@ the earliest and latest times at which they are available for meetings daily.
 Write an algorithm that takes in your schedule, your daily availability (earliest time, latest time) and
 that of your group member (or members), and the duration of the meeting you want to schedule.
 Time is given and should be returned in military format. For example: 9:30, 22:21. The given times
-(output) should be sorted in ascending order.
-Inputs are also in sorted order.
+(output) should be sorted in ascending order. Inputs are *also* in sorted order.
+
 
 Hint:
 > An algorithm for solving this problem involves combing the two sub-arrays into an array containing
@@ -51,6 +53,6 @@ person2_work_hours = \[‘9:00’, ’18: 30’\]
 
 duration_of_meeting = 30
 
-Sample output
+Sample output:
 \[\[’10:30’, ’12:00’\], \[’15:00’, ’16:00’\], \[’18:00’, ’18:30’\]\]
 > Note that the "person1_busy_Schedule =" part will NOT be in the input.txt document file.
