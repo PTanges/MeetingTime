@@ -8,7 +8,13 @@ Project Member(s): **Patton Tang**
 University Email: pattontanges@csu.fullerton.edu
 
 ## Running Instructions
-> (To be added),  instructions for how to run the code. Specifically the read and write functionality
+> Keep schedule.txt within the same folder location as main.py for os.getcwd() to function correctly.
+> Rename the fileName variable within main from schedule.txt to (your input text file name) if necessary.
+> Input file must be named "schedule.txt" and be of the format of the sample input listed below.
+
+> Other requirements for input file:
+> Workers must have at least existing 2 meetings each for the algorithm to run properly.
+> The minimum meeting time must be a positive integer from [1 to 999].
 
 # Project Specifications
 
@@ -43,16 +49,15 @@ of a set unavailability, with consideration of the daily active periods.
 
 ### Sample Inputs & Sample Outputs
 Sample input:
-person1_busy_Schedule =\[ \[’12:00’, ’13:00’\], \[’16:00’, ’18:00’\]\]
-
-person1_work_hours = \[‘9:00’, ’19:00’\]
-
-person2_busy_Schedule = \[\[ ‘9:00’, ’10:30’\], \[’12:20’, ’14:30’\], \[’14:30’, ’15:00’\], \[’16:00’, ’17:00’ \]\]
-
-person2_work_hours = \[‘9:00’, ’18: 30’\]
-
-duration_of_meeting = 30
+> [[12:00, 13:00], [16:00, 18:00]]
+> 
+> [09:00, 19:00]
+> 
+> [[09:00, 10:30], [12:20, 14:30], [14:30,15:00], [16:00, 17:00 ]]
+> 
+> [09:00, 18:30]
+> 
+> 30
 
 Sample output:
-\[\[’10:30’, ’12:00’\], \[’15:00’, ’16:00’\], \[’18:00’, ’18:30’\]\]
-> Note that the "person1_busy_Schedule =" part will NOT be in the input.txt document file.
+> [[10:30, 12:00], [15:00, 16:00], [18:00, 18:30]]
