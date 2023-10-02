@@ -14,6 +14,7 @@ University Email: pattontanges@csu.fullerton.edu
 
 > Other requirements for input file:
 > Workers must have at least existing 2 meetings each for the algorithm to run properly.
+> Workers may only have 1 contiguous shift scheduled per given day.
 > The minimum meeting time must be a positive integer from [1 to 999].
 
 > Once these are fulfilled, run the main.py file (main.py is the equivalent of Project1_starter.py as per the instructions).
