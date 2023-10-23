@@ -1,5 +1,6 @@
 import os
 import MT_COMPUTATION
+from pathlib import Path
 
 def parseFile(inputFileName, outputTimes):
     # File Deliminator between Samples is finding the minimumMeetingTime
@@ -14,7 +15,8 @@ def parseFile(inputFileName, outputTimes):
     _fillBoolAvailableTime(_availableTimes)
 
     # Assumes the input.txt file is in the same folder as the .py file
-    filePath = os.getcwd() + "\\" + inputFileName
+    path = Path(__file__).parent.absolute()
+    filePath = os.path.join(path, inputFileName)
     with open(filePath, "r") as file:
         for line in file:
             if len(line) > 0 and len(line) < 4:
