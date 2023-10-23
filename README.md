@@ -30,8 +30,7 @@ The group schedule matching takes two or more arrays as input. The arrays repres
 already booked and login/logout time of group members. It outputs an array containing intervals of
 time when all members are available for a meeting for a minimum duration expected.
 The group schedule matching takes following inputs:
-- 1: Busy_Schedule: A list of list that represent the persons existing schedule (they can’t plan any
-other engagement during these hours)
+- 1: Busy_Schedule: A list of list that represent the persons existing schedule (they can’t plan any other engagement during these hours)
 - 2: Working_period: Daily working periods of group members. (login,logout)
 - 3: Duration of the meeting
 
@@ -53,13 +52,13 @@ of a set unavailability, with consideration of the daily active periods.
 ### Sample Inputs & Sample Outputs
 Sample input:
 > [[12:00, 13:00], [16:00, 18:00]]
-> 
+>
 > [09:00, 19:00]
-> 
+>
 > [[09:00, 10:30], [12:20, 14:30], [14:30,15:00], [16:00, 17:00 ]]
-> 
+>
 > [09:00, 18:30]
-> 
+>
 > 30
 
 Sample output:
